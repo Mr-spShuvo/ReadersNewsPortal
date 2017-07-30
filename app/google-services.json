@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "865496504782",
+    "firebase_url": "https://readers-news-portal.firebaseio.com",
+    "project_id": "readers-news-portal",
+    "storage_bucket": "readers-news-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865496504782:android:2b2ab8146d85fc29",
+        "android_client_info": {
+          "package_name": "com.appoclipse.readersnewsportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865496504782-1109hphp4rd8n3uhvd01qblp7bpdq3ic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appoclipse.readersnewsportal",
+            "certificate_hash": "d492bd0e4e6a954a5652fc3ad12926a759782400"
+          }
+        },
+        {
+          "client_id": "865496504782-6rnuh7vshrjsjkilj3p9enrrntsbsdpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqbXLen18VKlW_fgXPThjDVjUNTi3CNkI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865496504782-6rnuh7vshrjsjkilj3p9enrrntsbsdpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
