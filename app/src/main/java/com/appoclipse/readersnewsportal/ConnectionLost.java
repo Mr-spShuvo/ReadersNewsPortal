@@ -45,8 +45,6 @@ public class ConnectionLost extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent i = new Intent(getApplicationContext(), BanglaNews.class);
-        startActivity(i);
         finish();
     }
 
