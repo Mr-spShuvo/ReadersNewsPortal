@@ -218,19 +218,6 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/independent" />
 
-            <ImageButton
-                android:id="@+id/six"
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_gravity="center"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/round_bg"
-                android:onClick="observer"
-                android:padding="30dp"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/observer" />
-
             <com.google.android.gms.ads.NativeExpressAdView
                 android:id="@+id/ads2"
                 android:layout_width="match_parent"
@@ -243,6 +230,19 @@
                 ads:adUnitId="@string/native_smaller">
 
             </com.google.android.gms.ads.NativeExpressAdView>
+
+            <ImageButton
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="observer"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/observer" />
 
             <ImageButton
                 android:id="@+id/seven"
@@ -269,6 +269,20 @@
                 android:padding="30dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/asianage" />
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/ads3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:visibility="gone"
+                ads:adSize="300x80"
+                ads:adUnitId="@string/native_smaller">
+
+            </com.google.android.gms.ads.NativeExpressAdView>
 
             <ImageButton
                 android:id="@+id/nine"
@@ -318,8 +332,151 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+            <ImageButton
+                android:id="@+id/tweleve"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="nytimes"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/nytimes" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="guardian"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/guardian" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="huffington"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/huffington" />
+
             <com.google.android.gms.ads.NativeExpressAdView
-                android:id="@+id/ads3"
+                android:id="@+id/ads4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/round_bg"
+                android:visibility="gone"
+                ads:adSize="300x80"
+                ads:adUnitId="@string/native_smaller">
+
+            </com.google.android.gms.ads.NativeExpressAdView>
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="washington"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/washington" />
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="usatoday"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/usatoday" />
+
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="bloomberg"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bloomberg" />
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="nypost"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/nypost" />
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/ads5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/round_bg"
+                android:visibility="gone"
+                ads:adSize="300x80"
+                ads:adUnitId="@string/native_smaller">
+
+            </com.google.android.gms.ads.NativeExpressAdView>
+
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="hindutimes"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                ads:srcCompat="@drawable/hindutimes" />
+
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:onClick="indianexpress"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                ads:srcCompat="@drawable/indianexpress" />
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/ads6"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -331,7 +488,6 @@
                 android:visibility="invisible"
                 ads:adSize="300x80"
                 ads:adUnitId="@string/native_smaller">
-
             </com.google.android.gms.ads.NativeExpressAdView>
         </LinearLayout>
     </ScrollView>
