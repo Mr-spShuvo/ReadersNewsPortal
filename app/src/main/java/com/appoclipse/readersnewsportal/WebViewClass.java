@@ -42,24 +42,7 @@ public class WebViewClass extends AppCompatActivity {
     void websiteView() {
         bar.setProgress(70);
         bar.setMax(100);
-        web.setWebViewClient(new WebViewClient(){
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-
-                String url2="http://www.chatadda.com/";
-                // all links  with in ur site will be open inside the webview
-                //links that start ur domain example(http://www.chatadda.com/)
-                if (url != null && url.startsWith(url2)){
-                    return false;
-                }
-                // all links that points outside the site will be open in a normal android browser
-                else  {
-                    view.getContext().startActivity(
-                            new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
-                    return true;
-                }
-            }
-        });
-        Log.i("Shuvo: ", webURL);
+        web.setWebViewClient(new WebViewClient());
 
         web.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -78,10 +61,10 @@ public class WebViewClass extends AppCompatActivity {
         web.loadUrl(webURL);
         web.setVerticalScrollBarEnabled(false);
         web.setInitialScale(100);
-        loadfast(web);
+        loadFast(web);
     }
 
-    private void loadfast(WebView web) {
+    private void loadFast(WebView web) {
         web.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
         WebSettings webSettings = web.getSettings();
         webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
@@ -198,45 +181,44 @@ public class WebViewClass extends AppCompatActivity {
         if (web.canGoBack()) {
             web.goBack();
         } else {
-
-            if (activityNum == 1){
-                i = new Intent(this, BanglaNews.class);
-                startActivity(i);
-                finish();
-                Log.i("Fuck", "Pressed!");
-            } else if (activityNum == 2){
-                i = new Intent(this, EnglishNews.class);
-                startActivity(i);
-                finish();
+//
+//            if (activityNum == 1){
+//                i = new Intent(this, BanglaNews.class);
+//                startActivity(i);
+//                //finish();
+//                Log.i("Fuck", "Pressed!");
+//            } else if (activityNum == 2){
+//                i = new Intent(this, EnglishNews.class);
+//                startActivity(i);
+//                //finish();
+//            }
+//        }
+            switch (activityNum){
+                case 1:
+                    i = new Intent(this, BanglaNews.class);
+                    startActivity(i);
+                    finish();
+                    break;
+                case 2:
+                    i = new Intent(this, EnglishNews.class);
+                    startActivity(i);
+                    finish();
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                default:
             }
         }
-//            switch (activityNum){
-//                case 1:
-//                    i = new Intent(this, BanglaNews.class);
-//                    startActivity(i);
-//                    finish();
-//                    break;
-//                case 2:
-//                    i = new Intent(this, EnglishNews.class);
-//                    startActivity(i);
-//                    finish();
-//                    break;
-//                case 3:
-//                    break;
-//                case 4:
-//                    break;
-//                case 5:
-//                    break;
-//                case 6:
-//                    break;
-//                case 7:
-//                    break;
-//                case 8:
-//                    break;
-//                default:
-//            }
-//
-//        }
 
     }
 }
